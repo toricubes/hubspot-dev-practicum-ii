@@ -1,0 +1,45 @@
+<!--
+  templateType: section
+  label: Two Column Image and Text
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/image-and-text-section.png
+  description: "Two Column section with a large image and text block"
+-->
+
+{% dnd_section
+    max_width={{context.max_width || 1440}},
+    padding={
+        'default': {
+            'top': 50,
+            'right': 20,
+            'bottom': 50,
+            'left': 20
+        }
+    }    
+%}
+    {% dnd_column 
+        offset=0,
+        width=6
+    %}
+        {% dnd_row %}
+            {% dnd_module path="@hubspot/linked_image",
+                img={
+                    "loading": "lazy"
+                }
+            %}
+            {% end_dnd_module %}
+        {% end_dnd_row %}
+    {% end_dnd_column %}
+    {% dnd_column 
+        offset=6,
+        width=6
+    %}
+        {% dnd_row %}
+            {% dnd_module
+                path="@hubspot/rich_text",
+                html="<h2>Here is some sample text</h2><p>It goes on and on and on and on.</p>"
+            %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+    {% end_dnd_column %}
+{% end_dnd_section %}

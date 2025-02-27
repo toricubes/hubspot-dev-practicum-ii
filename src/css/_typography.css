@@ -1,0 +1,28 @@
+h1 {
+    font-size: {{theme.global_fonts.h1}}px;
+    line-height: 1.9;
+}
+h2 {
+    font-size: {{theme.global_fonts.h2}}px;
+    line-height: 1.7;
+}
+h3 {
+    font-size: {{theme.global_fonts.h3}}px;
+    line-height: 1.6;
+}
+h4 {
+    font-size: {{theme.global_fonts.h4}}px;
+    line-height: 1.5;
+}
+h5 {
+    font-size: {{theme.global_fonts.h5}}px;
+    line-height: 1.3;
+}
+h6 {
+    font-size: {{theme.global_fonts.h6}}px;
+    line-height: 1.3;
+}
+p, li {
+    font-size: {{theme.global_fonts.body_text}}px;
+    line-height: 1.2;
+}

@@ -1,0 +1,31 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.team-member {
+  box-sizing: border-box;
+  flex: 0 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+  }
+}
+
+.team-member img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  max-height: 300px;
+}
+
+.team-member .content {
+  padding: 20px;
+  flex-grow: 1;
+}

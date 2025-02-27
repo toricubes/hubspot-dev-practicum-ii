@@ -1,0 +1,128 @@
+[
+    {
+        "label":"Header Background Color",
+        "name":"header_bg_color",
+        "type":"color",
+        "default":{
+            "color":"#eee"
+        }
+    },
+    {
+        "label":"Footer Background Color",
+        "name":"footer_bg_color",
+        "type":"color",
+        "default":{
+            "color":"#eee"
+        }
+    },
+    {
+      "label": "Global Fonts",
+      "name": "global_fonts",
+      "type": "group",
+      "children": [
+        {
+          "label": "H1",
+          "name": "h1",
+          "type": "number"
+        },
+        {
+          "label": "H2",
+          "name": "h2",
+          "type": "number"
+
+        },
+        {
+          "label": "H3",
+          "name": "h3",
+          "type": "number"
+
+        },
+        {
+          "label": "H4",
+          "name": "h4",
+          "type": "number"
+
+        },
+        {
+          "label": "H5",
+          "name": "h5",
+          "type": "number"
+
+        },
+        {
+          "label": "H6",
+          "name": "h6",
+          "type": "number"
+
+        },
+        {
+          "label": "Body Text",
+          "name": "body_text",
+          "type": "number"
+
+        }
+
+      ]
+    },
+
+    {
+        "label": "Global colors",
+        "name": "global_colors",
+        "type": "group",
+        "children": [
+          {
+            "label": "Primary",
+            "name": "primary",
+            "type": "color",
+            "alternate_names": ["primary_color"],
+            "visibility": {
+              "hidden_subfields": {
+                "opacity": true
+              }
+            },
+            "inherited_value": {
+              "property_value_paths": {
+                "color": "brand_settings.primaryColor"
+              }
+            },
+            "default": {
+              "color": "#494A52"
+            }
+          },
+          {
+            "label": "Secondary",
+            "name": "secondary",
+            "type": "color",
+            "alternate_names": ["secondary_color"],
+            "visibility": {
+              "hidden_subfields": {
+                "opacity": true
+              }
+            },
+            "inherited_value": {
+              "property_value_paths": {
+                "color": "brand_settings.secondaryColor"
+              }
+            },
+            "default": {
+              "color": "#F8FAFC"
+            }
+          },
+          {
+            "label": "Accent One",
+            "name": "accent_one",
+            "type": "color",
+            "visibility": {
+              "hidden_subfields": {
+                "opacity": true
+              }
+            },
+            "inherited_value": {
+              "property_value_paths": {
+                "color": "brand_settings.accentColor1"
+              }
+            }
+          }
+        ]
+      }
+]

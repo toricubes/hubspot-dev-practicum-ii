@@ -1,0 +1,17 @@
+<!--
+    templateType: global_partial
+    label: Global Header
+-->
+<!-- Begin partial -->
+<header class="dp2_header">
+  <a href="#main-content" class="skip-to-main">Skip to content</a>
+  <div class="dp2_inner">
+    <div class="dp2_logo">
+      {% module "logo" path="@hubspot/logo" img={"loading":"eager"} %}
+    </div>
+    <div class="dp2_menu">
+      {% module "header-menu" path="@hubspot/simple_menu" %}
+    </div>
+  </div>
+</header>
+<!-- End partial -->

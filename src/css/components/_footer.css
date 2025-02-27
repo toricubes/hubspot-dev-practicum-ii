@@ -1,0 +1,11 @@
+.dp2_footer {
+    background-color: {{theme.footer_bg_color.color}};
+    .dp2_inner {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,164 @@
+[ {
+  "id" : "1a41bc4a-2af9-7371-a83b-f8f2fae87d60",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5d3348d7-32c3-bb58-6dbc-b6f7f647f495",
+    "name" : "card_styles",
+    "display_width" : null,
+    "label" : "Card Styles",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c73510df-2453-7d32-8dbd-5441772d7d49",
+      "name" : "card_bottom_color",
+      "display_width" : null,
+      "label" : "Card Bottom Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "00cdf71b-1ad3-115e-5f67-633359cba666",
+      "name" : "border_field",
+      "display_width" : null,
+      "label" : "Border",
+      "required" : false,
+      "locked" : false,
+      "allow_custom_border_sides" : false,
+      "type" : "border",
+      "default" : { }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "card_bottom_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "card_styles" : {
+      "card_bottom_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  }
+}, {
+  "id" : "c53bfb72-b04f-0e83-d082-80f6bb07a84a",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "8a9b324c-3a0e-4b26-9d8b-52fd36eb9bde",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/20518639/Akita_hiking_in_Shpella_e_Pellumbasit.jpeg",
+      "alt" : "Akita_hiking_in_Shpella_e_Pellumbasit",
+      "loading" : "lazy",
+      "width" : 512,
+      "height" : 384,
+      "max_width" : 512,
+      "max_height" : 384
+    }
+  }, {
+    "id" : "c2c4d759-6135-adda-0858-890b46778d03",
+    "name" : "first_name",
+    "display_width" : null,
+    "label" : "First Name",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "firstName"
+  }, {
+    "id" : "c02dd41d-207d-fc00-f295-3d044910c73f",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Job Title"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/20518639/Akita_hiking_in_Shpella_e_Pellumbasit.jpeg",
+      "alt" : "Akita_hiking_in_Shpella_e_Pellumbasit",
+      "loading" : "lazy",
+      "width" : 512,
+      "height" : 384,
+      "max_width" : 512,
+      "max_height" : 384
+    },
+    "first_name" : "firstName",
+    "title" : "Job Title"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/20518639/Akita_hiking_in_Shpella_e_Pellumbasit.jpeg",
+      "alt" : "Akita_hiking_in_Shpella_e_Pellumbasit",
+      "loading" : "lazy",
+      "width" : 512,
+      "height" : 384,
+      "max_width" : 512,
+      "max_height" : 384
+    },
+    "first_name" : "firstName",
+    "title" : "Job Title"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/20518639/Akita_hiking_in_Shpella_e_Pellumbasit.jpeg",
+      "alt" : "Akita_hiking_in_Shpella_e_Pellumbasit",
+      "loading" : "lazy",
+      "width" : 512,
+      "height" : 384,
+      "max_width" : 512,
+      "max_height" : 384
+    },
+    "first_name" : "firstName",
+    "title" : "Job Title"
+  } ]
+} ]

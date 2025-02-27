@@ -1,0 +1,72 @@
+<!--
+    templateType: page
+    label: About
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ standard_header_includes }}
+    {{ require_css(get_asset_url('../css/_reset.css')) }}
+    {{ require_css(get_asset_url('../css/_layout.css')) }}
+    {{ require_css(get_asset_url('../css/style.css')) }}
+  </head>
+  <body>
+    {% global_partial path="./partials/header.html" %}
+
+    {% dnd_area "main" %}
+      {% dnd_section "mission" %}
+        {% dnd_column %}
+
+          {% dnd_row %}
+            {% dnd_module path="@hubspot/rich_text",
+              html="<h2>Our Mission</h2>" %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+
+
+
+          {# IMAGE / RICH TEXT ROW#}
+          {% dnd_row %}
+            {% dnd_module path="@hubspot/linked_image", 
+              img={
+                "alt" : "kittens",
+                "src" : "https://www.stockvault.net/data/2007/03/01/100489/preview16.jpg",
+                "width": "100%"
+              },
+              width=6 %}
+            {% end_dnd_module %}
+            {% dnd_module path="@hubspot/rich_text", width=6, offset=6 %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+
+      {% dnd_section "team" %}
+
+        {% dnd_column %}
+
+          {% dnd_row %}
+            {% dnd_module path="@hubspot/rich_text" html="<h2>Our Team</h2>" %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}  
+
+          {% dnd_row %}
+            {% dnd_module path="../modules/team" %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+
+        {% end_dnd_column %}
+        
+      {% end_dnd_section %}
+    {% end_dnd_area %}
+
+    {% global_partial path="./partials/footer.html" %}
+    
+    {{ standard_footer_includes }}
+  </body>
+</html>

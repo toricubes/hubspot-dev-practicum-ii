@@ -1,0 +1,15 @@
+<!--
+    templateType: page
+    label: Home
+    isAvailableForNewContent: true
+-->
+{% extends './layouts/base.html' %}
+
+{% block body %}
+
+    {% dnd_area "main" %}
+        {% include_dnd_partial "two-col-image-text" path="../sections/two-column-image-and-text.html" %}
+        {% include_dnd_partial "team-members" path="../sections/team-members.html" %}
+    {% end_dnd_area %}
+
+{% endblock body %}
